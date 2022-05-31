@@ -1,54 +1,163 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-</head>
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div>
-        <div class="topbar">
-            <p class="logo">Logo</p>
-            <div class="user"><img src="images/male.png" />
-                <p>Username</p>
-            </div>
-            <nav>
-                <ul>
-                    <li>Edit Profile</li>
-                    <li>Logout</li>
-                </ul>
-            </nav>
+      <div class="topbar">
+        <p class="logo">Logo</p>
+        <div class="user">
+          <img src="images/male.png" />
+          <p>Username</p>
         </div>
-        <div class="bodypart">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li onclick="window.location.href='dashboard.html'"><i class="icon-home"></i>Home</li>
-                        <li onclick="window.location.href='products.html'"><i class="icon-shopping-cart"></i>Products
-                        </li>
-                        <li onclick="window.location.href='orders.html'"> <i class="icon-truck"></i>Orders</li>
-                        <li onclick="window.location.href='index.html'"><i class="icon-signin"></i>Logout</li>
-                    </ul>
-                </nav>
+        <nav>
+          <ul>
+            <li>Edit Profile</li>
+            <li>Logout</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bodypart">
+        <div class="navbar">
+          <nav>
+            <ul>
+              <li onclick="window.location.href='dashboard.html'">
+                <i class="icon-home"></i>Home
+              </li>
+              <li onclick="window.location.href='products.html'">
+                <i class="icon-shopping-cart"></i>Products
+              </li>
+              <li onclick="window.location.href='orders.html'">
+                <i class="icon-truck"></i>Orders
+              </li>
+              <li onclick="window.location.href='index.html'">
+                <i class="icon-signin"></i>Logout
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="maincontent">
+          <div class="mainwrapper">
+            <div class="headerpart">
+              <div class="left">
+                <p>Edit Order</p>
+              </div>
+              <div class="right">
+                <button onclick="window.location.href='dashboard.html'">
+                  SAVE
+                </button>
+              </div>
             </div>
-            <div class="maincontent">
-                <div class="mainwrapper">
-                    <div class="headerpart">
-                        <div class="left">
-                            <p>Edit Order</p>
-                        </div>
-                        <div class="right">
-                            <button onclick="window.location.href='dashboard.html'">SAVE</button>
-                        </div>
-                    </div>
-                    <div class="childpart">
-                        
-                    </div>
+            <div class="childpart">
+              <div class="formdiv">
+                <div class="formrow">
+                  <div class="formelement">
+                    <label>OrderNo</label>
+                    <input disabled="disabled" type="text" value="102" />
+                  </div>
+                  <div class="formelement">
+                    <label>Customername</label>
+                    <input
+                      type="text"
+                      disabled="disabled"
+                      value="Test Customer"
+                    />
+                  </div>
                 </div>
+                <div class="formrow">
+                  <div class="formelement">
+                    <label>Status</label>
+                    <select>
+                      <option>Electronic</option>
+                      <option>Grocery</option>
+                    </select>
+                  </div>
+                  <div class="formelement">
+                    <label>CreatedOn</label>
+                    <input type="date" value="2022-05-12" />
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-</body>
 
+            <div class="childpart">     <table>
+                <thead>
+                    <th>ID</th>
+                    <th>PRODUCT NAME</th>
+                    <th>RATE</th>
+                    <th>QTY</th>
+                    <th>TOTAL</th>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td class="middlealign">
+                            1
+                        </td>
+                        <td>
+                            Pen
+                        </td>
+                        <td class="middlealign">
+                            &#8377;5
+                        </td>
+                        <td class="middlealign">
+                            11
+                        </td>
+                        <td class="middlealign">
+                            &#8377;5
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="middlealign">
+                            2
+                        </td>
+                        <td>
+                            Pencil
+                        </td>
+                        <td class="middlealign">
+                            &#8377;10
+                        </td>
+                        <td class="middlealign">
+                            5
+                        </td>
+                        <td class="middlealign">
+                            &#8377;5
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="middlealign">
+                            3
+                        </td>
+                        <td>
+                            Bottle
+                        </td>
+                        <td class="middlealign">
+                            &#8377;85
+                        </td>
+                        <td class="middlealign">
+                            7
+                        </td>
+                        <td class="middlealign">
+                            &#8377;5
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">TOTAL</td>
+                        <td class="middlealign">
+                            &#8377;526
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
